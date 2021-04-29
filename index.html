@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia APP</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Grandstander:wght@400;800;900&family=Montserrat:ital,wght@0,400;0,500;0,700;1,100;1,200&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style7.css">
+</head>
+
+<body>
+    <div id="questions">    
+    <div class="title-container">
+    <img src="https://opentdb.com/images/logo.png" alt="trivia-image">
+    </div>
+    <div class="container">
+        <label for="questions-number">Number of questions</label>
+        <select onchange="getQuestions()" class="form-control" id="questions-number">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        </select>
+    </div>
+    <div class="container">
+        <label for="category-type">Choose a category</label>
+        <select onchange="getQuestions()" class="form-control" id="category-type"></select>
+    </div>
+    <div class="container">
+        <label for="difficulty">Difficulty</label>
+        <select onchange="getQuestions()" class="form-control" id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div class="container">
+        <label for="type">Tipo</label>
+        <select onchange="getQuestions()" class="form-control" id="type">
+        <option value="multiple">Multiple choice</option>
+        <option value="boolean">True/false</option>
+        </select>
+    </div>
+</div>
+    <div id="cards">
+        <form onsubmit="check()">
+            <div id="container-cards"></div>
+          <div id="container-button">
+            <button type="submit"  id="btnWorked" style="display: none;">Confirm</button>
+          </div>
+            <div id="alert">
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

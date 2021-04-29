@@ -1,0 +1,18 @@
+.title-container {
+    background-color: aqua;
+    padding: 2%;
+    text-align: center;
+}
+#questions {
+    background-color: aqua;
+}
+#container-cards {
+    text-align: center;
+    margin: 5% 20%;
+}
+#cards {
+    background-color: aqua;
+}
+body {
+    background-color: aqua;   
+}
