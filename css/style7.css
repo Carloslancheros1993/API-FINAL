@@ -3,6 +3,9 @@
     padding: 2%;
     text-align: center;
 }
+.title-container img {
+    width: 40%;
+}
 #questions {
     background-color: aqua;
 }
@@ -16,3 +19,21 @@
 body {
     background-color: aqua;   
 }
+#container-button {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;   
+}
+#btnWorked {
+    font-size: 24px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border-color: #F39C12;
+    background-color: #F39C12;
+    color: white;
+}
+.btn {
+    text-decoration: none;
+}
+
